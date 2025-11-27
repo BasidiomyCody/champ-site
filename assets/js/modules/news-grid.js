@@ -7,7 +7,7 @@ window.NewsGrid = (() => {
       host.innerHTML = `
         <div class="muted">
           News feed coming soon.<br>
-          (We’ll likely pull from your Proton thread JSON here.)
+          (We’ll likely pull from the Proton feed here.)
         </div>
       `;
     }
