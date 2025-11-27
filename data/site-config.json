@@ -3,7 +3,7 @@
 "protonFeed": { "maxItems": 10 },
 "calendar": { "tz": "America/New_York" },
 "suggestionBox": {
-"endpoint": "https://formspree.io/f/your-form-id"
+"endpoint": "https://formspree.io/f/xjkjbrqw"
 },
 "eventSubmission": {
 "endpoint": "https://champ-add-event.comm-hub-myco.workers.dev/add-event"
