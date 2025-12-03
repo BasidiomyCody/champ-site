@@ -3,9 +3,9 @@ name: Build Gallery Index
 on:
   push:
     paths:
-      - "gallery/images/**"
-      - "gallery/meta/**"
-      - "gallery/scripts/build-gallery-index.js"
+      - "./gallery/images/**"
+      - "./gallery/meta/**"
+      - "./gallery/scripts/build-gallery-index.js"
 
 jobs:
   build-gallery-index:
