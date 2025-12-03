@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const repoRoot = path.join(__dirname, '..');
+const repoRoot = path.join(__dirname, '..', '..');
 const metaDir = path.join(repoRoot, 'gallery', 'meta');
 const outPath = path.join(repoRoot, 'gallery', 'index.json');
 
