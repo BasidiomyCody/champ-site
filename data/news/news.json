@@ -1,12 +1,14 @@
 {
   "items": [
     {
-      "id": "gmail-thread-id",
-      "subject": "Mushroom Walk this Saturday",
-      "date": "2025-02-02T14:30:00-05:00",
-      "snippet": "We’re planning a short foray in Ravenswood Park...",
-      "tags": ["announcement"],
-      "from": "Name <email@example.com>"
+      "id": "19ac3abab4690697",
+      "subject": "Re: [BasidiomyCody/champ-site] Adding Cloudflare worker (PR #1)",
+      "date": "2025-11-26T23:56:38-05:00",
+      "snippet": "@comm-hub-myco pushed 1 commit. 3c7c9fa6f1609cd5d5ce79cba1cacccbf5ff5737 Update style.css -- View it on GitHub: https://github.com/BasidiomyCody/champ-site/pull/1/files/f872d72c32838c12652abf0e1dee8fadae3862a1..3c7c9fa6f1609cd5d5ce79cba1cacccbf5ff5737 You are ",
+      "from": "comm-hub-myco <notifications@github.com>",
+      "tags": [
+        "news"
+      ]
     }
   ]
 }
