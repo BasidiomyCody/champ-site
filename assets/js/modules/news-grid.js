@@ -43,14 +43,14 @@
         const titleEl = document.createElement('h3');
         titleEl.className = 'event-card-title';
         titleEl.textContent = item.subject || '(no subject)';
-
+/*
         const metaEl = document.createElement('div');
         metaEl.className = 'event-card-meta';
         metaEl.textContent = item.from || '';
-
+*/
         const snippetEl = document.createElement('div');
         snippetEl.className = 'event-card-meta';
-        snippetEl.textContent = item.snippet || '';
+        snippetEl.textContent = item.body || '';
 
         // Clickable: expand/collapse full snippet
         card.addEventListener('click', () => {
