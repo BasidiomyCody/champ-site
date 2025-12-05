@@ -6,6 +6,9 @@
 "endpoint": "https://formspree.io/f/xjkjbrqw"
 },
 "eventSubmission": {
-"endpoint": "https://champ-add-event.yourname.workers.dev/add-event"
+"endpoint": "https://champ-add-event.comm-hub-myco.workers.dev/add-event"
+},
+"gallerySubmission": {
+  "endpoint": "https://champ-gallery-worker.comm-hub-myco.workers.dev/add-gallery"
 }
 }

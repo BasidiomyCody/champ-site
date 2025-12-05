@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>C.H.A.M.P. — Gallery</title>
+  <title>C.H.A.M.P. — News</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
@@ -14,14 +14,12 @@
       </div>
       <div class="titles">
         <h1>C.H.A.M.P.</h1>
-        <p>Fungal Photo Gallery</p>
+        <p>Community Hub for Actualizing Mycological Passion</p>
       </div>
     </div>
     <nav class="site-nav">
-      <a href="/champ-site/">Main</a>
-      <a class="active" href="">Gallery</a>
-      <a href="/champ-site/gallery/submit/">Submit a Photo</a>
-
+      <a href="../index.html">Main</a>
+      <a class="active" href="">News</a>
       <button
         class="theme-toggle"
         type="button"
@@ -37,25 +35,28 @@
     </nav>
   </header>
 
-  <main class="page-main">
-    <section class="card">
-      <header class="front-section-header">
-        <h2>Community Gallery</h2>
-        <p class="muted">
-          A living archive of CHAMP forays, finds, and fungal art. Newest first.
-        </p>
-      </header>
-
-      <div id="gallery-grid" class="gallery-grid"></div>
-      <div id="gallery-status" class="status" style="margin-top: 8px;"></div>
+  <main class="page-main news-page-main">
+    <section class="news-page-header">
+      <h2>CHAMP News & Updates</h2>
+      <p class="muted">
+        A newsletter-style view of tagged CHAMP announcements, events, questions, and community news.
+      </p>
     </section>
+
+    <section id="news-page-grid" class="news-page-grid">
+      <!-- Populated by news-page.js -->
+    </section>
+
+    <div id="news-page-status" class="status" style="margin-top: 16px;"></div>
   </main>
 
   <footer class="site-footer">
-    <span>© <span id="year"></span> C.H.A.M.P.</span>
+    <span>© <span id="year"></span> C.H.A.M.P. (Cody Crossley)</span>
   </footer>
 
+  <script defer src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
+  <script defer src="../assets/js/app.js"></script>
+  <script defer src="../assets/js/news-page.js"></script>
   <script defer src="../assets/js/theme-toggle.js"></script>
-  <script defer src="../assets/js/gallery.js"></script>
 </body>
 </html>

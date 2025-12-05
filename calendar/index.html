@@ -3,22 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>C.H.A.M.P. — Calendar</title>
+  <title>C.H.A.M.P. — Events Calendar</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="brand">
-      <div class="logo" aria-hidden="true">🍄</div>
+      <div class="logo">
+        <img src="../assets/images/CHAMP_logo_big.png" alt="C.H.A.M.P. Logo" />
+      </div>
       <div class="titles">
         <h1>C.H.A.M.P.</h1>
-        <p>Community EventsCalendar</p>
+        <p>Community Events Calendar</p>
       </div>
     </div>
     <nav class="site-nav">
-    <a href="/champ-site/">News</a>
-    <a href="/champ-site/calendar/">Calendar</a>
+    <a href="/champ-site/">Main</a>
+    <a class="active" href="">Calendar</a>
     <a href="/champ-site/add-event/">Add Event</a>
+    <button
+    class="theme-toggle"
+    type="button"
+    data-theme-toggle
+    aria-pressed="false"
+    aria-label="Toggle dark mode"
+      >
+        <span class="theme-toggle-track">
+          <span class="theme-toggle-thumb"></span>
+        </span>
+        <span class="theme-toggle-label">Dark</span>
+      </button>
     </nav>
   </header>
 
@@ -41,6 +55,7 @@
   <!-- Same Luxon + calendar module you already use -->
   <script defer src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
   <script defer src="../assets/js/modules/calendar.js"></script>
+  <script defer src="../assets/js/theme-toggle.js"></script>
   <script defer>
   document.addEventListener('DOMContentLoaded', () => {
     const yearEl = document.getElementById('year');

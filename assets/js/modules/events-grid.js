@@ -48,8 +48,9 @@ window.EventsGrid = (() => {
         // parse date/time
         let dt = null;
         if (ev.date) {
-          const raw = ev.time ? `${ev.date} ${ev.time}` : ev.date;
-          dt = DateTime.fromFormat(raw, 'yyyy-MM-dd HH:mm', { zone: 'local' });
+          const ct = ev.time ? DateTime.fromFormat(ev.time, "HH:mm").toFormat("h:mm a") : "";
+          const raw = ev.time ? `${ev.date} ${ct}` : ev.date;
+          dt = DateTime.fromFormat(raw, 'yyyy-MM-dd h:mm a', { zone: 'local' });
           if (!dt.isValid) dt = DateTime.fromFormat(raw, 'yyyy-MM-dd', { zone: 'local' });
           if (!dt.isValid) dt = DateTime.fromISO(ev.date, { zone: 'local' });
         }
@@ -108,9 +109,10 @@ window.EventsGrid = (() => {
 
     const meta = document.createElement('div');
     meta.className = 'event-card-meta';
-    const time = ev.time ? ` · ${ev.time}` : '';
+    const st = ev._dt ? ev._dt.toLocaleString(DateTime.TIME_SIMPLE) : '';
+    const time = ev.time ? ` · ${st}` : '';
     const loc = ev.location ? ` · ${ev.location}` : '';
-    meta.textContent = (ev.location || ev.time) ? `${time}${loc}`.replace(/^ · /, '') : '';
+    meta.textContent = (ev.location || st) ? `${time}${loc}`.replace(/^ · /, '') : '';
 
     body.appendChild(date);
     body.appendChild(title);
